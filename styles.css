@@ -6,14 +6,16 @@
 
 body {
     font-family: "Poppins", sans-serif;
-    background-color: #f8f8f8;
     color: #333;
-    background-image: url('fondo2.1.jpg');/* Reemplaza 'tu_imagen.jpg' con el nombre de tu archivo de imagen */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
-    background-position: center; /* Centra la imagen */
-    background-attachment: fixed; /* Fija la imagen al hacer scroll (opcional) */
-    
+
+    /* Fondo elegante luminoso que cubre toda la pantalla */
+    background: linear-gradient(
+        rgba(255,255,255,0.65),
+        rgba(255,255,255,0.65)
+    ),
+    url('fondo.png') no-repeat center center fixed;
+
+    background-size: cover; /* La imagen cubre toda la pantalla */
 }
 
 /* Header */
@@ -190,6 +192,7 @@ h2 , h3 ,div {
     box-shadow: 2px 2px 5px grey; /* Sombra */
     transform:matrix3d()/* Rota la imagen 10 grados */
 }
+
 
 
 
