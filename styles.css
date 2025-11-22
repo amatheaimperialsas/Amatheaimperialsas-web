@@ -276,4 +276,43 @@ img {
     }
 }
 
+/* Ajustes básicos para pantallas pequeñas */
+@media (max-width: 768px) {
+
+    .seccion {
+        padding: 1rem;
+        font-size: 0.95rem;
+    }
+
+    .piso {
+        max-width: 100%;
+        margin: 1rem 0;
+        padding: 1rem;
+    }
+
+    .galeria {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .galeria img {
+        width: 100%;
+        height: auto;
+        max-width: 400px; /* para que no se vea gigantesca */
+    }
+
+    form {
+        width: 100%;
+        max-width: 100%;
+        padding: 0 1rem;
+    }
+
+    .boton-azul,
+    .boton-rojo {
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+    }
+}
+
 
