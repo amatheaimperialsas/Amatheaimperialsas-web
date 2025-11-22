@@ -3,6 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* Imágenes totalmente adaptables a móviles */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
 
 body {
     margin: 0;
@@ -193,6 +200,7 @@ h2 , h3 ,div {
     box-shadow: 2px 2px 5px grey; /* Sombra */
     transform:matrix3d()/* Rota la imagen 10 grados */
 }
+
 
 
 
