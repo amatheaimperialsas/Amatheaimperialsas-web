@@ -1,22 +1,21 @@
+/* ===========================
+   REINICIO BÁSICO
+   =========================== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-/* Imágenes totalmente adaptables a móviles */
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
 
+/* ===========================
+   BODY / FONDO
+   =========================== */
 body {
     margin: 0;
     font-family: "Poppins", sans-serif;
-    color: #111; /* texto oscuro para mejor lectura */
+    color: #111; /* Texto oscuro, más legible */
 
-    /* Fondo con imagen + velo blanco translúcido */
+    /* Fondo elegante con velo blanco para mejorar la lectura */
     background:
         linear-gradient(
             rgba(255, 255, 255, 0.78),
@@ -26,10 +25,12 @@ body {
     background-size: cover;
 }
 
-/* Header */
+/* ===========================
+   HEADER Y MENÚ
+   =========================== */
 header {
     background-color: #0a2647;
-    color: white;
+    color: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -38,10 +39,11 @@ header {
 
 .logo h1 {
     font-size: 1.8rem;
-   
+    margin: 0;
 }
 
-.navbar ul {
+/* Lista de navegación */
+.navbar .nav-list {
     list-style: none;
     display: flex;
     gap: 1.5rem;
@@ -49,72 +51,56 @@ header {
 
 .navbar a {
     text-decoration: none;
-    color: white;
+    color: #fff;
     font-weight: 500;
-    
 }
 
 .navbar a:hover {
     color: #ffd700;
 }
 
-/* Menú hamburguesa */
+/* Botón menú hamburguesa (móvil) */
 .menu-toggle {
     display: none;
     font-size: 2rem;
     cursor: pointer;
 }
 
-@media (max-width: 768px) {
-    .menu-toggle {
-        display: block;
-    }
-
-    .nav-list {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        background: #0a2647;
-        top: 70px;
-        right: 0;
-        width: 200px;
-        text-align: right;
-        padding: 1rem;
-    }
-
-    .nav-list.active {
-        display: flex;
-    }
-}
-
-/* Secciones */
+/* ===========================
+   SECCIONES GENERALES
+   =========================== */
 .seccion {
-    font-size: larger;
+    font-size: 1rem;
     padding: 2rem;
-    text-align:justify;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
-    
+    text-align: justify;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular',
+        'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
+/* Tarjetas de apartamentos / bloques de contenido */
 .piso {
-    background: white;
+    background: rgba(255, 255, 255, 0.9);
     margin: 1rem auto;
-    padding: 1rem;
+    padding: 1.2rem;
     border-radius: 8px;
     max-width: 700px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
+/* Imagen principal de cada piso */
 .foto-piso {
-    background: #ddd;
-    width: fit-content;
-    height:fit-content;
+    width: 100%;
+    height: auto;
     margin: 1rem 0;
-    object-fit: contain;
+    object-fit: cover;
+    border-radius: 6px;
 }
 
-/* Galería */
+/* ===========================
+   GALERÍA
+   =========================== */
 .galeria {
     display: flex;
     justify-content: center;
@@ -129,7 +115,24 @@ header {
     border-radius: 8px;
 }
 
-/* Contacto */
+/* Collage (si lo usas) */
+.collage-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 10px;
+}
+
+.galeria-collage img {
+    width: 300px;
+    height: 200px;
+    border: 5px solid white;
+    box-shadow: 2px 2px 5px grey;
+}
+
+/* ===========================
+   FORMULARIO DE CONTACTO
+   =========================== */
 form {
     display: flex;
     flex-direction: column;
@@ -138,72 +141,132 @@ form {
     gap: 0.5rem;
 }
 
-input, textarea {
+input,
+textarea {
     padding: 0.5rem;
     border-radius: 4px;
     border: 1px solid #ccc;
-    font: justify;
-    
+    font-size: 1rem;
 }
 
+/* Botones personalizados */
 .boton-azul {
-    background-color: #007bff; /* Color azul */
-    color: white;
+    background-color: #007bff;
+    color: #fff;
     padding: 10px 20px;
-    text-decoration: none; /* Elimina el subrayado */
+    text-decoration: none;
     border-radius: 5px;
-    display: inline-block; /* Necesario para aplicar padding y margen */
+    display: inline-block;
     margin: 5px;
-   
-  }
-  .boton-rojo {
-    background-color: #dc3545; /* Color rojo */
-    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.boton-rojo {
+    background-color: #dc3545;
+    color: #fff;
     padding: 10px 20px;
-    text-decoration: none; /* Elimina el subrayado */
+    text-decoration: none;
     border-radius: 5px;
-    display: inline-block; /* Necesario para aplicar padding y margen */
+    display: inline-block;
     margin: 5px;
-   
-  }
-  
-  /* Opcional: para cambiar el color al pasar el ratón (hover) */
-  .boton-azul:hover {
+    border: none;
+    cursor: pointer;
+}
+
+.boton-azul:hover {
     background-color: #0056b3;
-  }
-  
-  .boton-rojo:hover {
+}
+
+.boton-rojo:hover {
     background-color: #c82333;
-  }
-/* Footer */
+}
+
+/* ===========================
+   FOOTER
+   =========================== */
 footer {
     background: #0a2647;
-    color: white;
+    color: #fff;
     text-align: center;
     padding: 1rem;
     margin-top: 2rem;
 }
-h2 , h3 ,div {
+
+/* Encabezados centrados dentro de secciones */
+.seccion h2,
+.seccion h3 {
     text-align: center;
-    image-rendering:optimizeQuality;
-}
-.collage-container {
-    display: grid; /* o display: flex; flex-wrap: wrap; */
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Ejemplo de grid responsivo */
-    gap: 10px; /* Espacio entre imágenes */
-    padding: 10px;
-}
-.galeria-collage img {
-    width: 300px; /* Ancho de cada imagen */
-    height: 200px; /* Alto de cada imagen */
-    border: 5px solid white; /* Borde blanco */
-    box-shadow: 2px 2px 5px grey; /* Sombra */
-    transform:matrix3d()/* Rota la imagen 10 grados */
+    margin-bottom: 1rem;
 }
 
+/* ===========================
+   IMÁGENES GENERALES
+   =========================== */
+/* Para que ninguna imagen se salga en móvil */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
 
+/* ===========================
+   RESPONSIVE (MÓVIL)
+   =========================== */
+@media (max-width: 768px) {
 
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
 
+    .menu-toggle {
+        display: block;
+    }
 
+    .navbar .nav-list {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        background: #0a2647;
+        top: 70px;
+        right: 0;
+        width: 220px;
+        text-align: right;
+        padding: 1rem;
+    }
 
+    .navbar .nav-list.active {
+        display: flex;
+    }
 
+    .seccion {
+        padding: 1.2rem;
+        font-size: 0.95rem;
+    }
+
+    .piso {
+        max-width: 100%;
+        margin: 0.7rem auto;
+        padding: 1rem;
+    }
+
+    .galeria {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .galeria img {
+        width: 100%;
+        height: auto;
+    }
+
+    .boton-azul,
+    .boton-rojo {
+        display: block;
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+    }
+}
