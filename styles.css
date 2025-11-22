@@ -6,15 +6,19 @@
 
 body {
     font-family: "Poppins", sans-serif;
-    background-color: #f8f8f8;
-    color: #333;
-    background-image: url('fondo2.1.jpg');/* Reemplaza 'tu_imagen.jpg' con el nombre de tu archivo de imagen */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
-    background-position: center; /* Centra la imagen */
-    background-attachment: fixed; /* Fija la imagen al hacer scroll (opcional) */
-    
+    color: #111; /* Texto más oscuro = más legible */
+
+    /* FONDO REACTIVADO - CON TU IMAGEN */
+    background-image: url("fondo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    /* Esto evita que en móvil el fondo se corte */
+    min-height: 100vh;
 }
+
 
 /* Header */
 header {
@@ -190,3 +194,4 @@ h2 , h3 ,div {
     box-shadow: 2px 2px 5px grey; /* Sombra */
     transform:matrix3d()/* Rota la imagen 10 grados */
 }
+
