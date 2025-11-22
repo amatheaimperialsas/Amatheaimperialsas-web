@@ -23,6 +23,13 @@ body {
     background-attachment: fixed;
 }
 
+/* Imágenes adaptables */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 /* ===========================
    HEADER Y MENÚ
    =========================== */
@@ -268,4 +275,5 @@ img {
         box-sizing: border-box;
     }
 }
+
 
