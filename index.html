@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amathea Imperial</title>
-    ...
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
@@ -30,11 +30,11 @@
         <section id="inicio" class="seccion">
             <h2>Bienvenido a Amathea Imperial</h2>
             <br>
-           <h3> Alquila uno de nuestros apartamentos exclusivos y disfruta del máximo confort.</h3>
+           <h3> Alquila uno de nuestros tres apartamentos exclusivos y disfruta del máximo confort.</h3>
         </section>
 
         <section id="pisos" class="seccion">
-            <h2>Amathea Imperial S.A.S</h2>
+            <h2>Amathea Imperia SAS</h2>
             <div class="piso">
 
              <div class="foto-piso"><img src="amath.jpg" width="680" height="600" ></div>
@@ -61,8 +61,8 @@
             <div class="piso">
                 <h3>Apartamento A</h3>
                 
-                <div class="foto-piso"><img src="foto `piso A.jpg"  width="680" height="400"></div>
-                <p class="descripcion">Apartamento con dos habitaciones, cama matrimonial y un sofá cama 2 plazas, 2 baños y una capacidad para 5 personas.</p>
+                <div class="foto-piso"><img src="foto piso A.jpg"  width="680" height="400"></div>
+                <p class="descripcion">Apartamento con dos habitaciones, cama matrimonial y un sofa cama 2 plazas , 2 baño y una capacidad para 5 personas.</p>
                 <br>
                 <a href="http://airbnb.com/h/amatheaimperialsasapartamentoa" class="boton-rojo">Reserva via Airbnb</a>
                <br>
@@ -73,7 +73,7 @@
             <div class="piso">Reserva via Booking
                 <h3>Apartamento B</h3>
                 <div class="foto-piso"><img src="PIsoB.jpg" width="680" height="400" object-fit="cover"></div>
-                <p class="descripcion">Apartamento de una  habitación con cama doble y sofá cama de 2 plazas, un baño; con capacidad máxima para 3 personas.</p>
+                <p class="descripcion">Apartamento de una  habitacion con  cama doble y sofa cama de 2 plazas ,un  baño y tiene  una capacidar para 3 personas.</p>
                 <br>
 
                 <a href="http://airbnb.com/h/amatheaimperialsasapartamentob" class="boton-rojo">Reserva via Airbnb</a>
@@ -90,50 +90,15 @@
         <section id="fotos" class="seccion">
         <div class="galeria-collage">
             <h1>Fotos</h1>
-            <img src="foto `piso A.jpg" alt="Foto de un paisaje">
-            <img src="foto entrada .jpg" alt="Foto de un perro">
+            <img src="foto piso A.jpg" alt="Foto de un paisaje">
+            <img src="foto entrada.jpg" alt="Foto de un perro">
             <img src="PIsoB.jpg" alt="Foto de una persona">
             <img src="fachada.jpg" alt="fondo">
-        
+            <img src="foto piso B.jpg" alt="salon">
         </div>
     </section>
 
-</iframe>
-
-<div style="text-align: center; margin: 30px 0;">
-    <a href="#ubicacion" 
-       style="
-            display: inline-block;
-            padding: 15px 30px;
-            background-color: #0a2647;
-            color: white;
-            font-weight: bold;
-            font-size: 20px;
-            border-radius: 10px;
-            text-decoration: none;
-            box-shadow: 0px 4px 6px rgba(0,0,0,0.2);
-            transition: 0.3s;
-        "
-       onmouseover="this.style.backgroundColor='#103b6d'"
-       onmouseout="this.style.backgroundColor='#0a2647'">
-        📍 Cómo llegar
-        
         <!-- Sección Ubicación -->
-        <div style="display: flex; justify-content: center; width: 100%; margin: 20px 0;">
-    <blockquote 
-        class="instagram-media" 
-        data-instgrm-permalink="https://www.instagram.com/reel/DPgRsqDjqDq/" 
-        data-instgrm-version="14"
-        style="max-width: 400px; min-width: 300px; margin: auto;">
-    </blockquote>
-</div>
-
-<script async src="//www.instagram.com/embed.js"></script>
-
-
-    </a>
-</div>
-
         <section id="ubicacion" class="seccion">
             <h2>Ubicación</h2>
            
@@ -148,8 +113,12 @@
                 </iframe>
                 <br>
                 
-            
-                
+                <h1><button>Como Llegar </button></h1>
+                <!-- Inserta el video localmente -->
+                <video controls width="600">
+                    <source src="video-APARTAMENTOS URB. DEL SOL.mp4" type="video/mp4">
+                    Tu navegador no soporta la etiqueta de video.
+                </video>
             </div>
         
         </section>
@@ -180,27 +149,9 @@
     </main>
 
     <footer>
-        <p>&copy; 2025 Amathea Imperial S.A.S. Todos los derechos reservados.</p>
+        <p>&copy; 2025 Amathea Imperial. Todos los derechos reservados.</p>
     </footer>
 
     <script src="script.js"></script>
 </body>
-
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
