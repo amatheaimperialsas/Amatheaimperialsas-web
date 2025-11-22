@@ -4,15 +4,19 @@
     box-sizing: border-box;
 }
 
-cuerpo{
-    familia de fuentes:"Poppins", sans-serif;
-    color de fondo:#f8f8f8;
-    color:#333;
-    imagen de fondo: URL('fondo.png');
-    repetición de fondo: sin repetición;
-    tamaño de fondo: cubrir;
-    posición de fondo: centro;
-    fondo adjunto: fijado;
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    color: #111; /* texto oscuro para mejor lectura */
+
+    /* Fondo con imagen + velo blanco translúcido */
+    background:
+        linear-gradient(
+            rgba(255, 255, 255, 0.78),
+            rgba(255, 255, 255, 0.78)
+        ),
+        url("fondo.png") center center fixed no-repeat;
+    background-size: cover;
 }
 
 /* Header */
@@ -189,6 +193,7 @@ h2 , h3 ,div {
     box-shadow: 2px 2px 5px grey; /* Sombra */
     transform:matrix3d()/* Rota la imagen 10 grados */
 }
+
 
 
 
