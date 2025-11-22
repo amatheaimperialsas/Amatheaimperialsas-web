@@ -6,16 +6,17 @@
 
 body {
     font-family: "Poppins", sans-serif;
-    color: #111; /* Texto más oscuro = más legible */
+    color: #111; /* texto oscuro y legible */
 
-    /* FONDO REACTIVADO - CON TU IMAGEN */
-    background-image: url("fondo.png");
-    background-repeat: no-repeat;
+    /* FONDO con difuminado suave */
+    background:
+        linear-gradient(
+            rgba(255, 255, 255, 0.82),   /* Aumentar este valor = más difuminado */
+            rgba(255, 255, 255, 0.82)
+        ),
+        url("fondo.png") center center fixed no-repeat;
+
     background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-
-    /* Esto evita que en móvil el fondo se corte */
     min-height: 100vh;
 }
 
@@ -194,4 +195,5 @@ h2 , h3 ,div {
     box-shadow: 2px 2px 5px grey; /* Sombra */
     transform:matrix3d()/* Rota la imagen 10 grados */
 }
+
 
